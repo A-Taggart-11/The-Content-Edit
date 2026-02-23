@@ -1,0 +1,114 @@
+/* ── VARIABLES ── */
+:root {
+  --cream: #f5f0eb;
+  --blush: #e8c4c4;
+  --rose: #d4a0a0;
+  --pink-soft: #f0d4d4;
+  --black: #111010;
+  --dark: #1a1a1a;
+  --mid: #555;
+  --lens: rgba(220, 170, 190, 0.6);
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+/* ── SHARED LAYOUT ── */
+section {
+  padding: 6rem 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── SHARED TYPOGRAPHY ── */
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+
+/* ── SHARED BUTTONS ── */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2.2rem;
+  border-radius: 100px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-dark {
+  background: var(--black);
+  color: var(--cream);
+}
+
+.btn-dark:hover {
+  background: var(--dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--dark);
+  border: 1.5px solid var(--dark);
+}
+
+.btn-outline:hover {
+  background: var(--dark);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .hero-since {
+    display: none;
+  }
+}

@@ -1,0 +1,114 @@
+/* ── BOOKING ── */
+#booking {
+  background: var(--cream);
+}
+
+.booking-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking-inner .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.booking-inner > p {
+  font-size: 1rem;
+  color: var(--mid);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+/* ── FORM ── */
+form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+input,
+select,
+textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--dark);
+  background: white;
+  border: 1.5px solid rgba(180, 140, 140, 0.25);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--rose);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.btn-submit {
+  background: var(--black);
+  color: var(--cream);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.btn-submit:hover {
+  background: var(--rose);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(180, 130, 130, 0.3);
+}
+
+.form-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(85, 85, 85, 0.6);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

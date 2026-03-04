@@ -16,9 +16,9 @@
   inset: 0;
   background:
     radial-gradient(ellipse 80% 70% at 10% 20%, rgba(232, 196, 196, 0.55) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 60% at 90% 80%, rgba(220, 160, 180, 0.4) 0%, transparent 55%),
-    linear-gradient(to bottom, var(--cream) 60%, var(--pink-soft) 100%);
+    radial-gradient(ellipse 60% 60% at 90% 80%, rgba(220, 160, 180, 0.4) 0%, transparent 55%);
 }
+
 
 .hero-lens {
   position: absolute;

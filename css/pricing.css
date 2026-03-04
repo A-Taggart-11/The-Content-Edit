@@ -1,6 +1,6 @@
 /* ── PRICING ── */
 #pricing {
-  background: var(--pink-soft);
+  background: transparent;
 }
 
 .pricing-grid {
@@ -157,8 +157,3 @@
 .competition-banner a:hover {
   color: var(--blush);
 }
-```
-
-Commit message:
-```
-Simplify competition to temporary banner

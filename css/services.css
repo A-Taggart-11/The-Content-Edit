@@ -1,6 +1,6 @@
 /* ── SERVICES ── */
 #services {
- background: linear-gradient(to bottom, var(--pink-soft) 0%, var(--pink-soft) 100%);
+  background: transparent;
   color: var(--dark);
 }
 
@@ -12,21 +12,9 @@
   color: var(--black);
 }
 
+/* ── DELIVERABLES ── */
 #deliverables {
-  background: var(--pink-soft);
-  color: var(--dark);
-}
-
-#deliverables .section-label {
-  color: var(--rose);
-}
-
-#deliverables .section-title {
-  color: var(--black);
-}
-
-#deliverables {
-  background: var(--pink-soft);
+  background: transparent;
   color: var(--dark);
 }
 
@@ -70,7 +58,7 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: var(--cream);
+  background: rgba(245, 240, 235, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,12 +92,12 @@
   }
 }
 
+/* ── SERVICE CARDS ── */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5px;
   margin-top: 3rem;
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
 }
 
 .service-card {

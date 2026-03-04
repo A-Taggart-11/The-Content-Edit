@@ -12,6 +12,19 @@
   color: var(--cream);
 }
 
+#deliverables {
+  background: var(--black);
+  color: var(--cream);
+}
+
+#deliverables .section-label {
+  color: var(--blush);
+}
+
+#deliverables .section-title {
+  color: var(--cream);
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

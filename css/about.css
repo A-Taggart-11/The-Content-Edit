@@ -1,6 +1,6 @@
 /* ── ABOUT ── */
 #about {
-  background: var(--cream);
+   background: linear-gradient(to bottom, var(--pink-soft) 0%, var(--cream) 40%, var(--pink-soft) 100%);
 }
 
 .about-grid {

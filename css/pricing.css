@@ -115,3 +115,50 @@
   color: var(--mid);
   font-family: 'Space Mono', monospace;
 }
+
+/* ── COMPETITION BANNER ── */
+#competition {
+  padding: 0;
+}
+
+.competition-banner {
+  background: var(--black);
+  color: var(--cream);
+  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.competition-banner p {
+  font-size: 0.88rem;
+  color: rgba(245, 240, 235, 0.8);
+  letter-spacing: 0.02em;
+}
+
+.competition-banner strong {
+  color: var(--cream);
+}
+
+.competition-banner a {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.competition-banner a:hover {
+  color: var(--blush);
+}
+```
+
+Commit message:
+```
+Simplify competition to temporary banner
